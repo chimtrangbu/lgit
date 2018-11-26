@@ -40,13 +40,6 @@ def lgit_init():
         os.close(fd)
         fd = os.open('.lgit/index', os.O_CREAT)
         os.close(fd)
-
-        # bonus
-        os.mkdir('.lgit/refs')
-        os.mkdir('.lgit/refs/heads')
-
-
-        # end bonus
     else:
         print('Git repository already initialized.')
 
@@ -340,10 +333,6 @@ def lgit_log():
         f.close()
 
 
-def lgit_branch():
-    os.mkdir('.lgit/branch')
-
-
 def main():
     args = sys.argv
 
@@ -402,8 +391,6 @@ def main():
             lgit_configAuthor(author)
         elif command == 'log':
             lgit_log()
-        elif command == 'branch':
-            lgit_branch()
 
 
 if __name__ == '__main__':
