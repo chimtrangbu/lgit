@@ -330,3 +330,6 @@ Here are the commands that must be present in your project:
 * lgit log: shows the commit history
 
 You must respect the directory structure & files indicated in the subject.
+
+# Bonus
+https://github.com/chimtrangbu/BonusLgit
